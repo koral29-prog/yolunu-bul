@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Yolunu Bul — sana uyan çalışma biçimini keşfet." />
+    <meta name="theme-color" content="#f7f8f4" />
+    <link rel="canonical" href="https://yolunubul.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="yolunu bul — Meslek ve kendini keşfetme rehberi" />
+    <meta property="og:description" content="Meslek, hobi, kişilik, güçlü yönler ve yaşam ritmini keşfet." />
+    <meta property="og:url" content="https://yolunubul.netlify.app/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <title>yolunu bul — Meslek keşfi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +26,7 @@
     <link rel="stylesheet" href="assessment.css" />
     <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="mobile-menu.css" />
+    <link rel="stylesheet" href="site-polish.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -48,6 +58,7 @@
         <a href="#assessments"><span>05</span>Ülke / şehir testi <b>↗</b></a>
         <a href="#departments"><span>06</span>Üniversite bölümü bul <b>↗</b></a>
         <a href="#professions"><span>07</span>Meslekleri keşfet <b>↗</b></a>
+        <a href="#about"><span>08</span>Yolunu Bul hakkında <b>↗</b></a>
         <button class="button button-primary mobile-menu-start" data-start>Teste başla <span>↗</span></button>
       </nav>
     </div>
@@ -93,6 +104,11 @@
           <div class="flow-item"><span class="step-no">02</span><div><h3>Yönleri karşılaştır</h3><p>Tek bir cevaba sıkışmadan, sana yakın yolları yan yana gör.</p></div></div>
           <div class="flow-item"><span class="step-no">03</span><div><h3>İlk adımı seç</h3><p>Sonuçların bir hüküm değil; denemek için iyi bir başlangıç olsun.</p></div></div>
         </div>
+      </section>
+
+      <section class="about-section shell" id="about" aria-labelledby="about-title">
+        <div><p class="eyebrow">BU HARİTA NE İÇİN?</p><h2 id="about-title">Kendine bir hüküm değil,<br /><em>hareket alanı</em> aç.</h2></div>
+        <div class="about-copy"><p>Yolunu Bul, tek bir test sonucunun hayatını tanımlayabileceği fikrine mesafeli bir keşif alanı. Sorular; karar verirken neye dikkat ettiğini, nelerin seni canlandırdığını ve hangi ortamda daha rahat ilerlediğini düşünmen için tasarlandı.</p><p>Sonuçları başlangıç noktası olarak kullan: bir mesleği araştır, küçük bir hobi dene, bir bölümü karşılaştır veya sana yakın bir şehirde bir gün geçir.</p><span class="mono">KESİN CEVAP YOK · İLK ADIM VAR</span></div>
       </section>
 
       <section class="voices shell" id="voices"><div class="quote-mark">“</div><p>Doğru cevapları ararken değil, kendimi anlatırken daha çok şey fark ettim.</p><span>— Bir Yolunu Bul kullanıcısı</span></section>
@@ -142,6 +158,8 @@
       </section>
     </main>
 
+    <footer class="site-footer shell"><a class="wordmark" href="#top" data-home><span>yolunu bul</span><i></i></a><p>Meslek, hobi ve kendini keşfetme rehberi.</p><nav aria-label="Alt navigasyon"><a href="#about">Hakkında</a><a href="#assessments">Testler</a><a href="#professions">Meslekler</a></nav></footer>
+
     <section class="setup-view" data-setup hidden>
       <div class="setup-card">
         <button class="close-button setup-close" data-home aria-label="Ana sayfaya dön">×</button>
@@ -182,6 +200,9 @@
     <script src="data/hobbies.js?v=2"></script>
     <script src="data/assessments.js?v=1"></script>
     <script src="app.js?v=guide-5"></script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebApplication","name":"Yolunu Bul","url":"https://yolunubul.netlify.app/","description":"Meslek, hobi ve kişisel keşif rehberi.","applicationCategory":"EducationalApplication","inLanguage":"tr"}
+    </script>
   </body>
 </html>
 
