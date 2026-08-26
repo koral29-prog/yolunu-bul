@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="hobby.css" />
     <link rel="stylesheet" href="assessment.css" />
     <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="mobile-menu.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -26,11 +27,27 @@
       <nav class="desktop-nav" aria-label="Ana navigasyon">
         <a href="#how">Nasıl çalışır?</a>
         <a href="#hobbies">Hobini bul</a>
+        <a href="#assessments">Kendini keşfet</a>
         <a href="#departments">Bölümünü bul</a>
         <a href="#professions">Meslekleri keşfet</a>
       </nav>
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
       <button class="button button-small button-dark" data-start>Teste başla <span>↗</span></button>
     </header>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+      <button class="mobile-menu-backdrop" data-menu-close aria-label="Menüyü kapat"></button>
+      <nav class="mobile-menu-panel" id="mobile-menu" aria-label="Mobil navigasyon">
+        <div class="mobile-menu-head"><span class="mono">YOLUNU BUL</span><button class="close-button" data-menu-close aria-label="Menüyü kapat">×</button></div>
+        <p class="eyebrow">KEŞİF MENÜSÜ</p>
+        <a href="#how"><span>01</span>Nasıl çalışır? <b>↗</b></a>
+        <a href="#hobbies"><span>02</span>Hobini bul <b>↗</b></a>
+        <a href="#assessments"><span>03</span>Kendini keşfet <b>↗</b></a>
+        <a href="#departments"><span>04</span>Bölümünü bul <b>↗</b></a>
+        <a href="#professions"><span>05</span>Meslekleri keşfet <b>↗</b></a>
+        <button class="button button-primary mobile-menu-start" data-start>Teste başla <span>↗</span></button>
+      </nav>
+    </div>
 
     <main id="top">
       <section class="hero shell" aria-labelledby="hero-title">
