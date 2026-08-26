@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="comparison.css" />
     <link rel="stylesheet" href="department.css" />
     <link rel="stylesheet" href="hobby.css" />
+    <link rel="stylesheet" href="assessment.css" />
     <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
@@ -92,6 +93,19 @@
         </div>
       </section>
 
+      <section class="assessment-hub shell" id="assessments" aria-labelledby="assessment-title">
+        <div class="assessment-heading"><div><p class="eyebrow">KENDİNİ BAŞKA AÇILARDAN GÖR</p><h2 id="assessment-title">Bir cevap değil,<br /><em>birkaç yeni ipucu.</em></h2></div><p>Meslek ve hobi keşfinin yanına üç kısa rota daha ekledik. Sonuçları kesin hüküm gibi değil, kendin hakkında düşünebileceğin pratik notlar olarak oku.</p></div>
+        <div class="assessment-tabs" role="tablist" aria-label="Keşif testleri">
+          <button class="assessment-tab is-active" data-assessment-tab="personality" role="tab" aria-selected="true"><span>01</span><b>Kişilik testi</b><small>10 soru · davranış örüntüleri</small></button>
+          <button class="assessment-tab" data-assessment-tab="strengths" role="tab" aria-selected="false"><span>02</span><b>Güçlü yönler testi</b><small>8 soru · işe yarayan çıktılar</small></button>
+          <button class="assessment-tab" data-assessment-tab="place" role="tab" aria-selected="false"><span>03</span><b>Ülke / şehir testi</b><small>8 soru · yaşam ritmi</small></button>
+        </div>
+        <div class="assessment-panel" data-assessment-panel>
+          <div class="assessment-question"><div class="assessment-progress"><span class="mono" data-assessment-counter>01 / 10</span><i data-assessment-progress></i></div><span class="note-kicker" data-assessment-eyebrow>KENDİNE BAKMANIN BAŞKA YOLU</span><h3 data-assessment-question></h3><div class="assessment-choices" data-assessment-choices></div><button class="assessment-reset" data-assessment-reset hidden>Bu testi baştan dene ↻</button></div>
+          <aside class="assessment-result" data-assessment-result aria-live="polite"><span class="note-kicker">TESTİ SEÇ VE BAŞLA</span><h3>Sonuçların burada<br /><em>şekillenecek.</em></h3><p>İlk cevabınla birlikte bu alan sana özel notlar toplamaya başlayacak.</p></aside>
+        </div>
+      </section>
+
       <section class="department-guide shell" id="departments" aria-labelledby="department-title">
         <div class="department-heading"><div><p class="eyebrow">LİSEDEN SONRAKİ İLK YOL</p><h2 id="department-title">Hangi bölüme<br /><em>yakınsın?</em></h2></div><p>Meslek adını hemen seçmek zorunda değilsin. Önce bölümün nasıl düşündürdüğüne, hangi derslerle ve çalışma ritmiyle buluşturduğuna bak.</p></div>
         <div class="department-note"><span>ÜNİVERSİTE BÖLÜMÜ REHBERİ</span><p>Bu eşleştirme bir tercih robotu değil; kendine uygun bölümleri araştırmaya başlamak için bir ilk harita.</p><a href="https://yokatlas.yok.gov.tr/" target="_blank" rel="noreferrer">YÖK Atlas’ta doğrula ↗</a></div>
@@ -146,6 +160,7 @@
     <script src="data/professions.js?v=144"></script>
     <script src="data/departments.js?v=3"></script>
     <script src="data/hobbies.js?v=2"></script>
+    <script src="data/assessments.js?v=1"></script>
     <script src="app.js?v=guide-5"></script>
   </body>
 </html>
