@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="guide.css" />
     <link rel="stylesheet" href="comparison.css" />
     <link rel="stylesheet" href="department.css" />
+    <link rel="stylesheet" href="hobby.css" />
     <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
@@ -23,6 +24,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Ana navigasyon">
         <a href="#how">Nasıl çalışır?</a>
+        <a href="#hobbies">Hobini bul</a>
         <a href="#departments">Bölümünü bul</a>
         <a href="#professions">Meslekleri keşfet</a>
       </nav>
@@ -73,6 +75,22 @@
       </section>
 
       <section class="voices shell" id="voices"><div class="quote-mark">“</div><p>Doğru cevapları ararken değil, kendimi anlatırken daha çok şey fark ettim.</p><span>— Bir Yolunu Bul kullanıcısı</span></section>
+
+      <section class="hobby-finder shell" id="hobbies" aria-labelledby="hobby-title">
+        <div class="hobby-heading"><div><p class="eyebrow">İŞTEN SONRAKİ MERAKIN</p><h2 id="hobby-title">Kendine iyi gelen<br /><em>şeyi dene.</em></h2></div><p>Hobi seçmek de bir kişilik testi değil. Günün sonunda seni hangi tür merakın ve üretimin canlandırıyor, birlikte küçük bir ipucu bulalım.</p></div>
+        <div class="hobby-layout">
+          <div class="hobby-quiz-card">
+            <div class="hobby-card-top"><span class="mono" data-hobby-counter>01 / 06</span><span class="hobby-progress"><i data-hobby-progress></i></span></div>
+            <p class="note-kicker" data-hobby-label>BOŞ BİR CUMARTESİ</p>
+            <h3 data-hobby-question>Kimse senden bir şey istemiyor. İlk hangi duygu seni çeker?</h3>
+            <div class="hobby-choices" data-hobby-choices></div>
+            <button class="hobby-reset" data-hobby-reset hidden>Baştan dene ↻</button>
+          </div>
+          <aside class="hobby-result-card" data-hobby-result aria-live="polite">
+            <span class="note-kicker">SANA YAKIN HOBİLER</span><h3>İlk cevabını seçtiğinde<br /><em>burada belirecek.</em></h3><p>En iyi hobi, teoride sana uyan değil; yarın küçük bir adım atmak istediğin şeydir.</p>
+          </aside>
+        </div>
+      </section>
 
       <section class="department-guide shell" id="departments" aria-labelledby="department-title">
         <div class="department-heading"><div><p class="eyebrow">LİSEDEN SONRAKİ İLK YOL</p><h2 id="department-title">Hangi bölüme<br /><em>yakınsın?</em></h2></div><p>Meslek adını hemen seçmek zorunda değilsin. Önce bölümün nasıl düşündürdüğüne, hangi derslerle ve çalışma ritmiyle buluşturduğuna bak.</p></div>
@@ -127,6 +145,8 @@
     <div class="toast" data-toast role="status" aria-live="polite"></div>
     <script src="data/professions.js?v=144"></script>
     <script src="data/departments.js?v=3"></script>
+    <script src="data/hobbies.js?v=1"></script>
     <script src="app.js?v=guide-5"></script>
   </body>
 </html>
+
