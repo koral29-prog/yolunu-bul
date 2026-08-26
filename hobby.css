@@ -1,0 +1,18 @@
+.hobby-finder{border-top:1px solid var(--line);padding-top:86px;padding-bottom:120px}
+.hobby-heading{display:grid;grid-template-columns:7fr 5fr;gap:60px;align-items:end}
+.hobby-heading h2{font-family:var(--display);font-size:clamp(42px,5vw,68px);line-height:.98;letter-spacing:-.075em;margin:0}
+.hobby-heading h2 em,.hobby-result-card h3 em{font-style:normal;color:var(--moss)}
+.hobby-heading>p{color:var(--muted);max-width:390px;margin:0 0 5px}
+.hobby-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:48px;align-items:stretch}
+.hobby-quiz-card,.hobby-result-card{border:1px solid var(--line);border-radius:22px;padding:30px;background:var(--surface)}
+.hobby-quiz-card{min-height:390px;display:flex;flex-direction:column}
+.hobby-card-top{display:flex;align-items:center;gap:16px;color:var(--moss)}
+.hobby-progress{height:4px;background:var(--moss-soft);border-radius:99px;flex:1;overflow:hidden}.hobby-progress i{display:block;width:16.666%;height:100%;background:var(--moss);transition:width .3s ease}
+.hobby-quiz-card>.note-kicker{margin-top:54px}
+.hobby-quiz-card h3{font-family:var(--display);font-size:clamp(27px,3vw,39px);line-height:1.04;letter-spacing:-.06em;max-width:620px;margin:12px 0 24px}
+.hobby-choices{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}
+.hobby-choice{border:1px solid var(--line);border-radius:13px;background:var(--paper);padding:14px 15px;text-align:left;color:var(--ink);font-size:13px;line-height:1.35;min-height:58px;transition:background .2s,border-color .2s,transform .2s}.hobby-choice:hover,.hobby-choice:focus-visible{border-color:var(--moss);background:var(--moss-soft);transform:translateY(-2px);outline:none}
+.hobby-result-card{background:var(--ink);color:#fff;min-height:390px;display:flex;flex-direction:column}.hobby-result-card .note-kicker{color:#b7d2b9}.hobby-result-card h3{font-family:var(--display);font-size:clamp(28px,3.5vw,46px);line-height:.98;letter-spacing:-.065em;margin:54px 0 17px}.hobby-result-card p{color:#c6d0c8;font-size:14px;line-height:1.55;max-width:360px}.hobby-result-list{display:grid;gap:12px;margin-top:auto}.hobby-result-item{border-top:1px solid #53635a;padding-top:12px}.hobby-result-item b{font-family:var(--display);font-size:20px}.hobby-result-item p{font-size:12px;margin:5px 0 0;color:#c6d0c8}.hobby-result-item small{display:block;margin-top:8px;color:#b7d2b9;font-family:var(--mono);font-size:9px;line-height:1.4}.hobby-reset{align-self:flex-start;margin-top:22px;background:transparent;color:var(--moss);font-family:var(--mono);font-size:10px;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:800px){.hobby-finder{padding-top:60px;padding-bottom:76px}.hobby-heading{display:block}.hobby-heading>p{margin-top:23px}.hobby-layout{grid-template-columns:1fr;margin-top:34px}.hobby-quiz-card,.hobby-result-card{padding:24px;min-height:0}.hobby-quiz-card{min-height:460px}.hobby-quiz-card>.note-kicker{margin-top:42px}.hobby-choices{grid-template-columns:1fr}.hobby-result-card{min-height:340px}.hobby-result-card h3{margin-top:38px}}
+@media(max-width:430px){.hobby-quiz-card{min-height:500px}.hobby-quiz-card h3{font-size:30px}.hobby-choice{min-height:60px}.hobby-result-card h3{font-size:36px}}
+
