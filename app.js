@@ -237,5 +237,9 @@ $('[data-hobby-reset]').addEventListener('click',resetHobbies);
 $$('[data-assessment-tab]').forEach(tab=>tab.addEventListener('click',()=>selectAssessment(tab.dataset.assessmentTab)));
 $('[data-assessment-reset]').addEventListener('click',resetAssessment);
 renderAssessment();
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('[data-department-modal]').hidden)closeDepartment();else if(!comparisonModal.hidden)closeComparison();else if(!modal.hidden)closeModal();else if(!quizView.hidden)show('home')}if(e.key==='Enter'&&!quizView.hidden&&!$('[data-next]').disabled)next()});
+const mobileMenu=$('[data-mobile-menu]'),menuToggle=$('[data-menu-toggle]');
+function closeMobileMenu(){if(!mobileMenu)return;mobileMenu.classList.remove('is-open');document.body.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Menüyü aç');setTimeout(()=>{if(!mobileMenu.classList.contains('is-open'))mobileMenu.hidden=true},300)}
+function openMobileMenu(){mobileMenu.hidden=false;document.body.classList.add('menu-open');requestAnimationFrame(()=>mobileMenu.classList.add('is-open'));menuToggle.setAttribute('aria-expanded','true');menuToggle.setAttribute('aria-label','Menüyü kapat')}
+menuToggle.addEventListener('click',()=>mobileMenu.classList.contains('is-open')?closeMobileMenu():openMobileMenu());$$('[data-menu-close]').forEach(button=>button.addEventListener('click',closeMobileMenu));$$('.mobile-menu-panel a').forEach(link=>link.addEventListener('click',closeMobileMenu));$('.mobile-menu-start').addEventListener('click',closeMobileMenu);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('[data-department-modal]').hidden)closeDepartment();else if(!comparisonModal.hidden)closeComparison();else if(!modal.hidden)closeModal();else if(mobileMenu.classList.contains('is-open'))closeMobileMenu();else if(!quizView.hidden)show('home')}if(e.key==='Enter'&&!quizView.hidden&&!$('[data-next]').disabled)next()});
 
